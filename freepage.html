@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Page - Fruity Indonesia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#b8db8f]">
+
+<!-- ================= NAVBAR (SAMA PERSIS) ================= -->
+<header class="fixed top-0 w-full bg-[#2f6122] shadow-lg z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center py-5 px-6 text-white">
+
+    <!-- LOGO -->
+    <img src="images/Fruit1.png" class="h-16">
+
+    <!-- NAV DESKTOP -->
+    <nav class="hidden md:flex space-x-10 font-semibold text-lg">
+      <a href="index.html" class="hover:text-red-300">Home</a>
+      <a href="biodata.html" class="hover:text-red-300">Biodata</a>
+      <a href="contact_us.html" class="hover:text-red-300">Kontak</a>
+      <a href="posts.html" class="hover:text-red-300">Posts</a>
+      <a href="freepage.html" class="hover:text-red-300">FreePage</a>
+    </nav>
+
+    <!-- BUTTON DESKTOP -->
+    <button class="hidden md:block bg-red-600 px-6 py-2 rounded-full hover:bg-red-700 font-bold">
+      Location
+    </button>
+
+    <!-- MOBILE BUTTON -->
+    <button id="menuBtn" class="md:hidden text-white text-3xl">&#9776;</button>
+
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="hidden flex-col bg-[#2f6122] text-white px-6 py-4 space-y-3 font-semibold text-lg md:hidden">
+    <a href="index.html" class="hover:text-red-300">Home</a>
+    <a href="biodata.html" class="hover:text-red-300">Biodata</a>
+    <a href="contact_us.html" class="hover:text-red-300">Kontak</a>
+    <a href="posts.html" class="hover:text-red-300">Posts</a>
+    <a href="freepage.html" class="hover:text-red-300">FreePage</a>
+    <button class="bg-red-600 px-6 py-2 rounded-full hover:bg-red-700">Location</button>
+  </div>
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="pt-40 pb-20 text-center px-6">
+  <h1 class="text-5xl font-bold text-green-900 mb-4">Welcome to Our Creative Gallery</h1>
+  <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+    Halaman ini menampilkan berbagai foto produk dari brand Fruity Indonesia, Kwetiau & Baso 28, 
+    serta Baso Tekwey. Semuanya dikemas dalam tampilan modern dan responsif. Halaman ini juga
+    berisi music favorit.
+  </p>
+</section>
+
+<!-- ================= GALLERY SECTION ================= -->
+<section class="pb-20 px-6">
+  <h2 class="text-3xl font-bold text-green-900 text-center mb-10">Gallery Produk</h2>
+
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+
+    <!-- Card 1 -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+      <img src="images/fruit.jpg" class="w-full h-60 object-cover">
+      <div class="p-6">
+        <h3 class="font-bold text-xl text-green-800">Fruity Juice</h3>
+        <p class="text-gray-600 mt-2">Minuman sehat dengan buah asli yang segar dan kaya serat.</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+      <img src="images/kwetiau.jpg" class="w-full h-60 object-cover">
+      <div class="p-6">
+        <h3 class="font-bold text-xl text-green-800">Kwetiau Pontianak</h3>
+        <p class="text-gray-600 mt-2">Cita rasa autentik khas Pontianak dengan konsep modern.</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+      <img src="images/baso.jpg" class="w-full h-60 object-cover">
+      <div class="p-6">
+        <h3 class="font-bold text-xl text-green-800">Baso Tekwey</h3>
+        <p class="text-gray-600 mt-2">Baso dengan berbagai topping dan kuah kaldu sapi asli.</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+      <img src="images/1.jpg" class="w-full h-60 object-cover">
+      <div class="p-6">
+        <h3 class="font-bold text-xl text-green-800">Fruity Stand</h3>
+        <p class="text-gray-600 mt-2">Salah satu booth Fruity dengan tampilan modern dan eye-catching.</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+      <img src="images/2.jpg" class="w-full h-60 object-cover">
+      <div class="p-6">
+        <h3 class="font-bold text-xl text-green-800">Kwetiau 28 Menu</h3>
+        <p class="text-gray-600 mt-2">Menu kwetiau lezat yang disukai oleh banyak pelanggan.</p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+      <img src="images/3.jpg" class="w-full h-60 object-cover">
+      <div class="p-6">
+        <h3 class="font-bold text-xl text-green-800">Baso Tekwey Stand</h3>
+        <p class="text-gray-600 mt-2">Menu baso cepat saji yang praktis dan nikmat.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= VIDEO SECTION ================= -->
+<section class="pb-24 px-6">
+  <h2 class="text-3xl font-bold text-green-900 text-center mb-10">Favorit Music</h2>
+
+<div class="max-w-4xl mx-auto">
+  <iframe class="w-full h-72 md:h-96 rounded-xl shadow-xl"
+    src="https://www.youtube.com/embed/xiGhAeWtxMU"
+    title="Drunk Text - Henry Moodie (Lyrics)"
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+</div>
+
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="text-white text-center py-6" style="background-color: #67AB38;">
+  © 2025 Fruity Indonesia
+</footer>
+
+<!-- ================= MOBILE MENU SCRIPT ================= -->
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+</script>
+
+</body>
+</html>

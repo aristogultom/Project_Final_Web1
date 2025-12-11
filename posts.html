@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posts - Fruity Indonesia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#b8db8f]">
+
+<!-- ================= NAVBAR (SAMA PERSIS) ================= -->
+<header class="fixed top-0 w-full bg-[#2f6122] shadow-lg z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center py-5 px-6 text-white">
+
+    <!-- LOGO -->
+    <img src="images/Fruit1.png" class="h-16">
+
+    <!-- NAV DESKTOP -->
+    <nav class="hidden md:flex space-x-10 font-semibold text-lg">
+      <a href="index.html" class="hover:text-red-300">Home</a>
+      <a href="biodata.html" class="hover:text-red-300">Biodata</a>
+      <a href="contact_us.html" class="hover:text-red-300">Kontak</a>
+      <a href="posts.html" class="hover:text-red-300">Posts</a>
+      <a href="freepage.html" class="hover:text-red-300">FreePage</a>
+    </nav>
+
+    <!-- BUTTON DESKTOP -->
+    <button class="hidden md:block bg-red-600 px-6 py-2 rounded-full hover:bg-red-700 font-bold">
+      Location
+    </button>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button id="menuBtn" class="md:hidden text-white text-3xl">&#9776;</button>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="hidden flex-col bg-[#2f6122] text-white px-6 py-4 space-y-3 font-semibold text-lg md:hidden">
+    <a href="index.html" class="hover:text-red-300">Home</a>
+    <a href="biodata.html" class="hover:text-red-300">Biodata</a>
+    <a href="contact_us.html" class="hover:text-red-300">Kontak</a>
+    <a href="posts.html" class="hover:text-red-300">Posts</a>
+    <a href="freepage.html" class="hover:text-red-300">FreePage</a>
+    <button class="bg-red-600 px-6 py-2 rounded-full hover:bg-red-700">Location</button>
+  </div>
+</header>
+
+<!-- ================= POSTS CONTENT ================= -->
+<section class="pt-40 pb-24 px-6">
+  <div class="max-w-4xl mx-auto">
+
+    <h1 class="text-4xl font-bold text-green-800 text-center mb-10">
+      Post Data (NIM 46)
+    </h1>
+
+    <!-- Loading message -->
+    <p id="loading" class="text-center text-lg text-gray-700">Loading data...</p>
+
+    <!-- Error message -->
+    <p id="errorMessage" class="text-red-700 text-center font-semibold hidden">
+      Gagal memuat data. Silakan coba lagi.
+    </p>
+
+    <!-- Card container -->
+    <div id="postContainer" class="hidden bg-white p-8 rounded-xl shadow-xl border">
+
+      <h2 class="text-2xl font-bold text-green-900 mb-4" id="postTitle"></h2>
+      <p class="text-gray-600 text-sm mb-4">
+        <span class="font-semibold">Post ID:</span> <span id="postId"></span>
+      </p>
+      <p class="text-gray-700 leading-relaxed" id="postBody"></p>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="text-white text-center py-6" style="background-color: #67AB38;">
+  © Aristo Gultom
+</footer>
+
+<!-- ================= MOBILE MENU SCRIPT ================= -->
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+</script>
+
+<!-- ================= FETCH API SCRIPT ================= -->
+<script>
+const postId = 46; // sesuai instruksi: dua digit terakhir NIM
+
+fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById("loading").classList.add("hidden");
+
+    document.getElementById("postId").textContent = data.id;
+    document.getElementById("postTitle").textContent = data.title;
+    document.getElementById("postBody").textContent = data.body;
+
+    document.getElementById("postContainer").classList.remove("hidden");
+  })
+  .catch(error => {
+    document.getElementById("loading").classList.add("hidden");
+    document.getElementById("errorMessage").classList.remove("hidden");
+    console.error("Error fetching post:", error);
+  });
+</script>
+
+</body>
+</html>

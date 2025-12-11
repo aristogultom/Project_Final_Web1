@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata - Fruity Indonesia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#b8db8f]">
+
+<!-- ================= NAVBAR (SAMA PERSIS DENGAN INDEX) ================= -->
+<header class="fixed top-0 w-full z-50 bg-[#2f6122] shadow-lg">
+  <div class="max-w-7xl mx-auto flex justify-between items-center py-5 px-6 text-white">
+
+    <!-- LOGO -->
+    <img src="images/Fruit1.png" class="h-16">
+
+    <!-- NAV DESKTOP -->
+    <nav class="hidden md:flex space-x-10 font-semibold text-lg">
+      <a href="index.html" class="hover:text-red-300">Home</a>
+      <a href="biodata.html" class="hover:text-red-300">Biodata</a>
+      <a href="contact_us.html" class="hover:text-red-300">Kontak</a>
+      <a href="posts.html" class="hover:text-red-300">Posts</a>
+      <a href="freepage.html" class="hover:text-red-300">FreePage</a>
+    </nav>
+
+    <!-- BUTTON DESKTOP -->
+    <button class="hidden md:block bg-red-600 px-6 py-2 rounded-full text-white font-bold hover:bg-red-700">
+      Location
+    </button>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button id="menuBtn" class="md:hidden text-white text-3xl">&#9776;</button>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="hidden flex-col bg-[#2f6122] text-white px-6 py-4 space-y-3 font-semibold text-lg md:hidden">
+    <a href="index.html" class="hover:text-red-300 block">Home</a>
+    <a href="biodata.html" class="hover:text-red-300 block">Biodata</a>
+    <a href="contact_us.html" class="hover:text-red-300 block">Kontak</a>
+    <a href="posts.html" class="hover:text-red-300 block">Posts</a>
+    <a href="freepage.html" class="hover:text-red-300 block">FreePage</a>
+    <button class="bg-red-600 px-6 py-2 rounded-full text-white font-bold hover:bg-red-700 w-fit">
+      Location
+    </button>
+  </div>
+</header>
+
+<!-- ================= BIODATA SECTION ================= -->
+<section class="pt-40 pb-20 px-6">
+  <div class="max-w-5xl mx-auto bg-white p-10 rounded-xl shadow-xl">
+
+    <h1 class="text-4xl font-bold text-green-800 text-center mb-10">Biodata Mahasiswa</h1>
+
+    <div class="flex flex-col md:flex-row items-center gap-10">
+
+      <!-- FOTO PROFIL -->
+      <div class="md:w-1/3 flex justify-center">
+        <img src="images/profile.jpg" class="w-60 h-60 object-cover rounded-full shadow-lg border-4 border-green-700">
+      </div>
+
+      <!-- DATA DIRI -->
+      <div class="md:w-2/3 space-y-4 text-lg">
+
+        <p><span class="font-bold text-green-800">Nama:</span> Andre Lumbantoruan</p>
+
+        <p><span class="font-bold text-green-800">NIM:</span> (isi NIM kamu)</p>
+
+        <p><span class="font-bold text-green-800">Fakultas:</span> (isi fakultas kamu)</p>
+
+        <p><span class="font-bold text-green-800">Hobi:</span> 
+          Membaca, Berolahraga, Musik, Desain Web (sesuaikan)
+        </p>
+
+        <p><span class="font-bold text-green-800">Skills:</span> 
+          HTML, CSS, JavaScript, Tailwind CSS, UI/UX (sesuaikan)
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIAL SECTION ================= -->
+<section class="pb-24 px-6">
+  <div class="max-w-5xl mx-auto bg-[#e8f7d5] p-10 rounded-xl shadow-lg">
+
+    <h2 class="text-3xl font-bold text-green-900 mb-6 text-center">
+      Testimonial & Pengalaman dari Mata Kuliah Ini
+    </h2>
+
+    <p class="text-gray-700 text-lg leading-relaxed">
+      Selama mengikuti mata kuliah Web Programming, saya belajar banyak hal yang sebelumnya terasa sulit,
+      terutama tentang bagaimana membuat website yang responsif dan modern menggunakan Tailwind CSS.
+      Saya juga belajar pentingnya struktur HTML yang rapi, validasi form menggunakan JavaScript,
+      serta bagaimana melakukan fetch data dari API.
+      <br><br>
+      Tantangan terbesar bagi saya adalah memahami konsep responsive layout yang mobile-first,
+      namun setelah latihan dan bimbingan di kelas, saya mulai memahami cara kerja Tailwind
+      dan mulai menikmati proses desain web.
+      <br><br>
+      Mata kuliah ini membuat saya lebih percaya diri untuk melanjutkan perjalanan saya
+      sebagai calon web developer. Saya merasa lebih siap untuk membuat website profesional
+      dan mengembangkan portofolio pribadi saya.
+    </p>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="text-white text-center py-6" style="background-color: #67AB38;">
+  © Aristo Gultom
+</footer>
+
+<!-- ================= MOBILE MENU SCRIPT ================= -->
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+</body>
+</html>

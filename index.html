@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruity Indonesia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+<!-- ================= NAVBAR ================= -->
+<header class="fixed top-0 w-full z-50 bg-[#2f6122] shadow-lg">
+  <div class="max-w-7xl mx-auto flex justify-between items-center py-5 px-6 text-white">
+
+    <!-- LOGO -->
+    <img src="images/Fruit1.png" class="h-16">
+
+    <!-- NAV DESKTOP -->
+    <nav class="hidden md:flex space-x-10 font-semibold text-lg">
+      <a href="index.html" class="hover:text-red-300">Home</a>
+      <a href="biodata.html" class="hover:text-red-300">Biodata</a>
+      <a href="contact_us.html" class="hover:text-red-300">Kontak</a>
+      <a href="posts.html" class="hover:text-red-300">Posts</a>
+      <a href="freepage.html" class="hover:text-red-300">FreePage</a>
+    </nav>
+
+    <!-- BUTTON DESKTOP -->
+    <button class="hidden md:block bg-red-600 px-6 py-2 rounded-full text-white font-bold hover:bg-red-700">
+      Location
+    </button>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button id="menuBtn" class="md:hidden text-white text-3xl">&#9776;</button>
+
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="hidden flex-col bg-[#2f6122] text-white px-6 py-4 space-y-3 font-semibold text-lg md:hidden">
+  <a href="index.html" class="hover:text-red-300 block">Home</a>
+  <a href="biodata.html" class="hover:text-red-300 block">Biodata</a>
+  <a href="contact_us.html" class="hover:text-red-300 block">Kontak</a>
+  <a href="posts.html" class="hover:text-red-300 block">Posts</a>
+  <a href="freepage.html" class="hover:text-red-300 block">FreePage</a>
+  <button class="bg-red-600 px-6 py-2 rounded-full text-white font-bold hover:bg-red-700 w-fit">
+    Location
+  </button>
+</div>
+
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="relative h-[780px] bg-cover bg-center text-white flex flex-col justify-center items-center text-center px-4"
+  style="background-image: url('images/foto.png')">
+
+  <p class="text-xl mt-14 tracking-wide">Welcome to Fruity Indonesia</p>
+  <h1 class="text-5xl md:text-7xl font-bold tracking-wider">FOOD & BEVERAGE</h1>
+
+  <div class="flex space-x-6 mt-6">
+    <img src="images/ic-fb.png" class="h-10">
+    <img src="images/ic-ig.png" class="h-10">
+    <img src="images/ic-yt.png" class="h-10">
+    <img src="images/ic-tiktok.png" class="h-10">
+  </div>
+
+</section>
+
+<!-- ================= CARD PRODUK ================= -->
+<section class="relative bg-[#c7e9a8] pt-52 pb-40">
+
+  <div class="absolute -top-40 left-1/2 -translate-x-1/2
+              w-full max-w-7xl px-4 sm:px-6 
+              grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 z-20">
+
+    <!-- CARD 1 -->
+    <div class="bg-white p-8 sm:p-10 rounded-3xl shadow-xl text-center border border-gray-200">
+      <img src="images/fruit.jpg" class="h-28 sm:h-32 mx-auto object-contain">
+      <h3 class="text-lg sm:text-xl font-bold mt-4">Fruity</h3>
+      <p class="text-gray-600 mt-3 text-sm sm:text-base">
+        Minuman yang #enaknyasehat dari juice buah dan sayuran asli.
+      </p>
+      <button class="mt-6 bg-gray-700 text-white px-6 sm:px-7 py-2 rounded-full hover:bg-gray-900 text-sm sm:text-base">
+        Read More
+      </button>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="bg-white p-8 sm:p-10 rounded-3xl shadow-xl text-center border border-gray-200">
+      <img src="images/kwetiau.jpg" class="h-28 sm:h-32 mx-auto object-contain">
+      <h3 class="text-lg sm:text-xl font-bold mt-4">Kwetiau & Baso 28</h3>
+      <p class="text-gray-600 mt-3 text-sm sm:text-base">
+        Makanan peranakan khas Pontianak menggunakan kwetiau berbahan baku halal.
+      </p>
+      <button class="mt-6 bg-gray-700 text-white px-6 sm:px-7 py-2 rounded-full hover:bg-gray-900 text-sm sm:text-base">
+        Read More
+      </button>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="bg-white p-8 sm:p-10 rounded-3xl shadow-xl text-center border border-gray-200">
+      <img src="images/baso.jpg" class="h-28 sm:h-32 mx-auto object-contain">
+      <h3 class="text-lg sm:text-xl font-bold mt-4">Baso Tekwey</h3>
+      <p class="text-gray-600 mt-3 text-sm sm:text-base">
+        Baso dengan berbagai macam topping, mie dan kuah kaldu sapi asli.
+      </p>
+      <button class="mt-6 bg-gray-700 text-white px-6 sm:px-7 py-2 rounded-full hover:bg-gray-900 text-sm sm:text-base">
+        Read More
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= ABOUT FRUITY ================= -->
+<section class="bg-[#d0eda8] pt-20 pb-20">
+
+  <!-- Logo teks Fruity -->
+  <div class="w-full flex justify-center mb-6">
+    <img src="images/LOGO.png" class="h-20 sm:h-22">
+  </div>
+
+  <!-- Zigzag -->
+  <div class="w-full h-6 bg-[url('images/zigzag.png')] bg-repeat-x"></div>
+
+  <!-- Wrapper utama -->
+  <div class="max-w-7xl mx-auto relative px-4 sm:px-6">
+
+    <!-- Tab About / Menu -->
+    <div class="absolute -top-10 left-4 sm:left-10 flex space-x-4 sm:space-x-6 z-20">
+      <span class="bg-white px-4 sm:px-6 py-2 border-b-4 border-green-700 font-semibold rounded-t-lg text-sm sm:text-base">
+        About
+      </span>
+      <span class="bg-[#eaf8d5] px-4 sm:px-6 py-2 text-gray-500 rounded-t-lg text-sm sm:text-base">
+        Menu
+      </span>
+    </div>
+
+    <!-- BOX PUTIH (TURUN DIKIT BIAR NGGAK TABRAKAN) -->
+    <div class="bg-white rounded-xl shadow-xl p-6 sm:p-10 flex flex-col md:flex-row gap-10 mt-3">
+
+      <!-- LEFT TEXT -->
+      <div class="md:w-1/2">
+
+        <h2 class="text-3xl sm:text-4xl text-green-800 mb-4 font-bold">
+          Fruity Healthy & Delicious Drink
+        </h2>
+
+        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+          <b>Fruity Indonesia</b> adalah salah satu pionir dalam bisnis retail jus di kota Bandung yang dimulai pada tahun 1999.
+          Dengan beragam pilihan buah-buahan, 20 buah lokal dan impor yang berbeda, kami menyajikan pilihan jus buah dan sayuran
+          terlengkap di banyak pusat perbelanjaan, mall dan destinasi populer di wilayah kota Bandung, Bekasi, Bogor,
+          Tangerang Selatan dan Jakarta Selatan.
+        </p>
+
+        <p class="text-gray-700 leading-relaxed mt-4 text-sm sm:text-base">
+          Kami berpegang teguh pada slogan kami, yaitu Minuman Sehat dan Enak, yang menyediakan jus enak bagi masyarakat
+          yang mendambakan gaya hidup sehat. Kami yakin, kami akan selalu melakukannya. <b>#EnaknyaSehat</b>.
+        </p>
+
+        <!-- Sosial Media -->
+        <div class="flex justify-end space-x-4 mt-6">
+          <img src="images/facebook.png" class="h-10 sm:h-12">
+          <img src="images/instagram.png" class="h-10 sm:h-12">
+        </div>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="md:w-1/2 flex justify-center">
+        <img src="images/1.jpg" class="w-full max-w-[420px] h-auto drop-shadow-xl rounded-lg">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= ABOUT KWETIAU ================= -->
+<section class="bg-[#87c744] pt-20 pb-20 relative">
+
+  <div class="w-full h-10 bg-[url('images/zigzag-kwetiau.png')] bg-repeat-x absolute top-0 left-0"></div>
+
+  <div class="w-full flex justify-center mb-6 mt-6">
+    <img src="images/kWETIAU-TEKS.png" class="h-24">
+  </div>
+
+  <div class="max-w-7xl mx-auto relative mt-12">
+
+    <div class="absolute -top-10 left-10 flex space-x-6 z-20">
+      <span class="bg-white px-6 py-2 border-b-4 border-green-700 font-semibold rounded-t-lg">About</span>
+      <span class="bg-[#eaf8d5] px-6 py-2 text-gray-500 rounded-t-lg">Menu</span>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-xl p-10 flex flex-col md:flex-row gap-10 mt-6">
+
+      <div class="md:w-1/2">
+        <h2 class="text-4xl text-green-800 mb-4 font-bold">Kwetiau & Baso 28</h2>
+
+        <p class="text-gray-700 leading-relaxed">
+          Mengangkat makanan tradisional khas Kwetiau Pontianak menjadi pilihan utama dalam memuaskan lidah 
+          para pecinta makanan tradisional yang dikemas dengan konsep yang lebih modern.
+          Kwetiau & Baso 28 mengambil resep dari peranakan Pontianak Tionghoa yang terkenal.
+          Dengan ciri khasnya, Kwetiau & Baso 28 dikemas dengan konsep modern untuk memanjakan lidah penikmat kuliner tradisional.
+        </p>
+
+        <p class="text-gray-700 leading-relaxed mt-4">
+          Untuk memenuhi penikmat makanan tradisional dan minuman sehat yang juga enak,
+          Kwetiau & Baso 28 berkolaborasi dengan FRUITY healthy and delicious drink.
+          Dengan menyajikan makanan tradisional yang menggugah selera dan disertai minuman yang segar,
+          sehat dan enak, kaya akan serat serta khasiat menjadikan Kwetiau & Baso 28 pilihan yang tepat
+          untuk mengisi kembali energi kita. <b>#MakanYangPastiPastiAja</b>
+        </p>
+
+        <div class="flex justify-end space-x-4 mt-6">
+          <img src="images/facebook.png" class="h-12">
+          <img src="images/instagram.png" class="h-12">
+        </div>
+      </div>
+
+      <div class="md:w-1/2 flex justify-center">
+        <img src="images/2.jpg" class="w-full max-w-[450px] h-auto rounded-xl drop-shadow-xl">
+      </div>
+
+    </div>
+  </div>
+
+  <div class="w-full h-10 bg-[url('images/zigzag-kwetiau.png')] bg-repeat-x absolute bottom-0 left-0"></div>
+
+</section>
+
+
+<!-- ================= ABOUT BASO TEKWEY ================= -->
+<section class="relative bg-[#c8e7a4] pt-24 pb-24 overflow-hidden">
+
+  <div class="absolute top-0 left-0 w-full h-10 bg-[url('images/zigzag-kwetiau.png')] bg-repeat-x"></div>
+
+  <div class="w-full flex justify-center items-center h-40">
+    <img src="images/baso-tekwey-logo.png" class="h-28">
+  </div>
+
+  <div class="max-w-7xl mx-auto relative">
+
+    <div class="absolute -top-10 left-10 flex space-x-6 z-20">
+      <span class="bg-white px-6 py-2 border-b-4 border-green-700 font-semibold rounded-t-lg">About</span>
+      <span class="bg-[#eaf8d5] px-6 py-2 text-gray-500 rounded-t-lg">Menu</span>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-xl p-10 flex flex-col md:flex-row gap-10 mt-6">
+
+      <div class="md:w-1/2 flex justify-center">
+        <img src="images/3.jpg" class="w-full max-w-[420px] h-auto drop-shadow-xl">
+      </div>
+
+      <div class="md:w-1/2">
+        <h2 class="text-4xl text-green-800 font-bold mb-4">Baso Tekwey</h2>
+
+        <p class="text-gray-700 leading-relaxed">
+          Memasuki diversifikasi bisnis baru, kita tetap dengan semangat mengangkat tema makanan favorit masyarakat Indonesia 
+          yaitu Mie Baso. Diracik dengan keahlian kita sehingga menciptakan produk yang sifatnya take away.
+          Lahir lah Baso Tekwey dengan menu beragam macam baso sebagai menu utamanya.
+        </p>
+
+        <p class="text-gray-700 leading-relaxed mt-4">
+          Produk yang memiliki pengolahan yang cepat karena sifatnya yang take away dan praktis
+          dengan berbagai macam topping baso, mie dan kuah kaldu sapi asli juga sambal khas
+          yang menggugah selera. <b>#MakanYangPastiPastiAja</b>
+        </p>
+
+        <div class="flex justify-end space-x-4 mt-6">
+          <img src="images/facebook.png" class="h-12">
+          <img src="images/instagram.png" class="h-12">
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="absolute bottom-0 left-0 w-full h-10 bg-[url('images/zigzag-kwetiau.png')] bg-repeat-x"></div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="text-white text-center py-6" style="background-color: #67AB38;">
+  © 2025 Fruity Indonesia
+</footer>
+
+
+<!-- ================= MOBILE MENU SCRIPT ================= -->
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+</body>
+</html>
